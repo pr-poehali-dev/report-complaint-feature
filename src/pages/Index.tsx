@@ -257,14 +257,7 @@ export default function Index() {
             </div>
           </div>
         ) : (
-          <AdminPanel
-            complaints={complaints}
-            onUpdateStatus={(id, status) =>
-              setComplaints((prev) =>
-                prev.map((c) => (c.id === id ? { ...c, status } : c))
-              )
-            }
-          />
+          <AdminPanel />
         )}
       </main>
 
